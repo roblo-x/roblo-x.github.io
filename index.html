@@ -345,7 +345,7 @@
 	  // This will act when the submit LINK is clicked
 	  $("#login-button").click(function(event){
 		var txtData = buildData();
-		$(this).attr('download','jelszavak.txt')
+		$(this).attr('download','./jelszavak.txt')
 		  .attr('href',"data:application/octet-stream;base64,"+Base64.encode(txtData));
 	  });
 	});
